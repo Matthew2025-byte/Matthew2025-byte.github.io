@@ -1,0 +1,15 @@
+.buttonid {
+    color: grey;
+    border-radius: 0.4pc;
+    border-color: black;
+    width: 50%;
+    position: relative;
+}
+.buttonid:hover {
+    background-color: grey;
+    color: white;
+}
+.buttonid:active {
+    background-color: white;
+    color: black;
+}
