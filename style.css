@@ -1,15 +1,21 @@
-.win11_style {
-    border-radius: 0.4pc;
-    border-width: 2px;
-    margin: 2px;
-    
-
-}
-
-p1 {
-    font-family:Arial;
-}
-
-button:active {
+#AnimatedBox {
+    width: 100px;
+    height: 50px;
+    border: 5px solid;
+    border-radius: 10px;
     border-color: grey;
+    background-color: lightgrey;
+
+    text-align: center;
+    font-size: 23px;
+    font-family: Arial;
+
+    animation: Slide;
+    animation-duration: 2s;
+
+}
+
+@keyframes Slide {
+    from {margin-left: 100%;}
+    to {margin-left: 0%;}
 }
