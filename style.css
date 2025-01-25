@@ -1,15 +1,15 @@
-.buttonid {
-    color: grey;
+.win11_style {
     border-radius: 0.4pc;
-    border-color: black;
-    width: 50%;
-    position: relative;
+    border-width: 2px;
+    margin: 2px;
+    
+
 }
-.buttonid:hover {
-    background-color: grey;
-    color: white;
+
+p1 {
+    font-family:Arial;
 }
-.buttonid:active {
-    background-color: white;
-    color: black;
+
+button:active {
+    border-color: grey;
 }
