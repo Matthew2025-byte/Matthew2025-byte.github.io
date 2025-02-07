@@ -1,0 +1,58 @@
+html, body { cursor: none; }
+        body {
+            translate: 0% 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #updating {
+            margin: 5px;
+            font-family: Arial;
+            color: white;
+        }
+        #message {
+            margin: 5px;
+            font-family: Arial;
+            color: white;
+        }
+
+
+
+
+        .spinner {
+            height: 200px;
+            width: 200px;
+        }
+
+        .spinner svg {
+            animation: rotate 1.5s linear infinite;
+        }
+        .spinner circle {
+            animation: dash 1.5s ease-in-out infinite;
+            fill: none;
+            stroke-width: 3;
+            stroke: white;
+            stroke-linecap: round;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -134;
+            }
+        }

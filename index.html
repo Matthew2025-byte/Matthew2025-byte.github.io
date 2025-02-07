@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
-        <title>CSS</title>
-        <link rel="stylesheet" href="style.css">
+        <title>SpinnerAnimation</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     
+
     <body>
-        <audio preload autoplay src="HelloThere.mp3" type="audio/mpeg">
-            Audio type not supported
-        </audio>
-        <div id="AnimatedBox">Hello There</div>
+        <p>
+            <p id="updating">Updating...</p>
+            <p id="message">Please do not turn off computer</p>
+        </p>
+
+
+        <div class="spinner">
+            <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="15" />
+            </svg>
+        </div>
     </body>
+
+    <style>
+        
+    </style>
 </html>
